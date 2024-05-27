@@ -401,7 +401,7 @@ article .icon {
 
 #projects .about-containers {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create 3 columns of equal width */
+  grid-template-columns: repeat(2, 1fr); /* Create 2 columns of equal width */
   gap: 2rem; /* Adjust the gap between grid items as needed */
   margin-top: 2rem;
 }
