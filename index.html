@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Seanna Arnold</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Seanna Arnold</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" class="profile-pic" alt="Seanna Arnold profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi! I'm</p>
+        <h1 class="title">Seanna Arnold</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https:www.linkedin.com/in/seanna-arnold'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Seanna-Arnold'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>From Leasing Agent to Software Engineer <br />through GA and various development projects</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Software Engineer bootcamp<br />Data Science bootcamp</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a software engineer with a multicultural upbringing spanning Africa and Asia, I've cultivated adaptability and a natural rapport with diverse individuals. These experiences have enriched my perspective and equipped me with the ability to thrive in varied cultural settings, evident in my collaborative roles.
+              <br/><br/>
+              Driven by a passion for creative problem-solving and user-centric innovation, I bring a unique blend of technical expertise and inventive thinking to my work. Eager to leverage my technical skills, creativity, and multicultural insights, I excel in dynamic team environments, ready to contribute meaningfully to forward-thinking projects and initiatives.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Technical Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>TailwindCSS</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Materialize UI</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Mongoose</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Node</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Express</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>AJAX</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>MySQL</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>PostgreSQL</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Django</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>JSX</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>JSON</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Figma</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Bootstrap</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Github</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Byte Buddies</h2>
+            <p>Fullstack MERN virtual pet game app with AI chatbot using chat openAI integration.</p><br/><br/><br/>
+            <p><strong>Mongoose, Express, React, Node, Chat OpenAI API, JSX, Tailwind, Figma </strong></p><br/>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Seanna-Arnold/byte-buddies-mern'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://byte-buddies-e0c75f65c40b.herokuapp.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Wander</h2>
+            <p>Social travel itinerary app where you can leave reviews on different attractions, search attractions using the Google Places API, and share itineraries publically.</p><br/>
+            <p><strong>Python, Django, Materialize UI, Google Places API, Figma, HTML, CSS, JavaScript, PostgreSQL, Figma </strong></p><br/>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/jg0087/Wander-DjangoApp'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://wanderapp2024-2213c11b239e.herokuapp.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Cart Companion</h2>
+            <p>Backend MEN stack application where you can efficiently plan your shopping trips.</p><br/><br/><br/>
+            <p><strong>Mongoose, Express, Node, OAuth, Figma, HTML, CSS, JavaScript, Figma </strong></p><br/>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Seanna-Arnold/Grocery-List-CRUD-Mongoose-Express-Node-app'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://cart-companion-2b0412cf78ef.herokuapp.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Memory Game</h2>
+            <p>South African inspired memory game developed with vanilla JavaScript.</p><br/><br/>
+            <p><strong>HTML, CSS, JavaScript, Figma</strong></p><br/>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Seanna-Arnold/Memory-Game-Capstone'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://seanna-arnold.github.io/Memory-Game-Capstone/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section></section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:seanna.arnold@icloud.com">seanna.arnold@icloud.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/seanna-arnold">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Seanna Arnold. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
